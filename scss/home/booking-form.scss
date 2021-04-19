@@ -1,0 +1,170 @@
+.booking-form {
+    width: 818px;
+    height: 890px;
+
+    margin: 0 auto;
+
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+
+    // background-color: chocolate;
+
+    p {
+        font-family: Proximal;
+        font-size: $title;
+        margin-top: 20px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        font-family: Gill;
+        font-size: $med-desc;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        input {
+            height: 60px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+
+            border: $site-blue solid 2px;
+            background: transparent;
+
+            font-family: Gill;
+            font-size: $med-desc;
+        }
+
+        label {
+            margin-bottom: 20px;
+        }
+
+        .text-short {
+            width: 44%;
+        }
+
+        .text-long {
+            width: 54%;
+        }
+
+        .check-input {
+            width: 85%;
+        }
+
+        .check  {
+            label {
+                width: 10%;
+            }
+
+        }
+
+        .drop-down {
+            width: 15%;
+            height: 60px;
+
+            margin-bottom: 20px;
+            padding-left: 10px;
+            
+            border: $site-blue solid 2px;
+            background: transparent;
+
+            font-family: Gill;
+            font-size: $med-desc;
+        }
+
+        .message {
+            width: 100%;
+            height: 192px;
+            padding: 10px 10px 10px 10px;
+
+            border: $site-blue solid 2px;
+            background: transparent;
+
+            font-family: Gill;
+            font-size: $med-desc;
+        }
+
+        .submit {
+            width: 98%;
+            margin: 20px auto;
+            border-radius: 50px;
+            color: $site-white;
+            background-color: $site-blue;
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .booking-form {
+        width: 80%; 
+        height: 1050px;
+
+        form {
+            .mobile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .text-short {
+                width: 100%;
+            }
+    
+            .text-long {
+                width: 100%;
+            }
+
+            // .check {
+            //     min-width: 300px;
+            // }
+    
+        }
+
+        
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .booking-form {
+    height: 1400px;
+
+        form {
+            .row {
+                flex-direction: column;
+            }
+
+            .check {
+                label {
+                    width: 100%;
+                }
+            }
+
+            .check-input {
+                width: 100%;
+            }
+    
+            .drop-down {
+                width: 100%;
+            }
+
+            label {
+                width: 100%;
+            }
+        }
+
+
+    }
+    
+}

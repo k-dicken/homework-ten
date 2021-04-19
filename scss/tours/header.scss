@@ -1,0 +1,18 @@
+header {
+        @include selfCenter(980px, 50px auto 0 auto);
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tours-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: white;
+        font-family: Proximal;
+        font-size: $title;
+
+}

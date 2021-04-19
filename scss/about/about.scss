@@ -1,0 +1,119 @@
+.about {
+    // background-color: aqua;
+    max-width: 980px;
+
+    margin: auto;
+
+    .about-content {
+        margin: 100px 0 100px 0;
+
+        .underline {
+            margin-bottom: 30px;
+    
+            span {
+                font-family: Proximal;
+                font-size: $title; 
+    
+                border-bottom: 1px solid $site-black;
+    
+                margin-bottom: 35px;
+            }
+        }
+
+        p {
+            min-height: 96px;
+
+            font-family: Gill;
+            font-size: $med-desc; 
+        }
+    }
+
+    .client-quotes {
+        // background-color: blue;
+
+        margin-bottom: 200px;
+
+        .underline {
+            margin-bottom: 30px;
+    
+            span {
+                font-family: Proximal;
+                font-size: 40px; 
+    
+                border-bottom: 1px solid $site-black;
+    
+                margin-bottom: 35px;
+            }
+        }
+
+        .quote-row {
+            max-width: 676px;
+            min-height: 150px;
+
+            margin-bottom: 40px;
+
+            display: flex;
+
+            .quote-image {
+                width: 260px;
+                height: 150px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+            }
+
+            .client1 {
+                background-image: url(../images/about-client-01.jpg);
+            }
+
+            .client2 {
+                background-image: url(../images/about-client-02.jpg);
+            }
+
+            .quote-text {
+                position: relative;
+
+                min-height: 50px;
+                width: 100%;
+
+                padding-left: 25px;
+                padding-bottom: 25px;
+
+                // background-color: greenyellow;
+
+                .quote-name {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                    h1 {
+                        font-family: Proximal;
+                        font-size: $large-desc;
+                        color: $site-blue;
+                        margin-bottom: 0;
+                    }
+                }
+
+                p {
+                    font-family: Gill;
+                    font-size: $med-desc; 
+                }
+
+
+                
+            }
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1060px) {
+    .about {
+        width: 90%;
+    }
+}

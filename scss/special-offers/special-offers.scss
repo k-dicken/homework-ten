@@ -1,0 +1,130 @@
+.special-offers {
+    max-width: 980px;
+
+    margin: 50px auto 120px auto;
+
+    .offers-content {
+        // background-color: blue;
+
+        .underline {
+            // background-color: crimson;
+
+            margin-bottom: 20px;
+
+            span {
+                font-family: Proximal;
+                font-size: 40px; 
+    
+                // min-width: 240px;
+                
+                
+                // background-color: burlywood;
+                border-bottom: 1px solid $site-black;
+    
+                margin-bottom: 35px;
+            }
+        }
+
+
+        .quote-row {
+            max-width: 556px;
+            min-height: 287px;
+
+            display: flex;
+
+            margin-bottom: 60px;
+
+            .quote-image {
+                width: 200px;
+                height: 287px;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+            }
+
+            .spain {
+                background-image: url(../images/special-offer-01.jpg);
+            }
+
+            .thai {
+                background-image: url(../images/special-offer-02.jpg);
+            }
+
+            .quote-text {
+                position: relative;
+
+                min-height: 50px;
+                width: 100%;
+
+                padding-left: 25px;
+                padding-bottom: 45px;
+
+                h2 {
+                    font-family: Proximal;
+                    font-size: 20px; 
+                    color: #FF7D38;
+
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                }
+
+                    
+                .button {
+                    @include siteButton;
+
+                    position: absolute;
+                    bottom: 0;
+
+                    width: 133px;
+                    height: 40px;
+
+                    display: flex;
+                    justify-content: center;
+                    
+
+                    font-family: Gill;
+                    color: $site-white;
+                    font-size: 16px;
+
+                    text-decoration: none;
+                }
+
+                p {
+                    font-family: Gill;
+                    font-size: $med-desc; 
+                }
+
+
+                
+            }
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1060px) {
+    .special-offers {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .special-offers {
+        .offers-content {
+            .quote-row {
+                .quote-text {
+    
+                    h2 {
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
+}

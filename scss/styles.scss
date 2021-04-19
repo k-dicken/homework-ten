@@ -1,0 +1,33 @@
+@import "variables.scss";
+@import "structure.scss";
+@import "mixins.scss";
+
+// home assets
+@import "home/hero.scss";
+    @import "nav.scss";
+
+@import "home/promo-tours.scss";
+
+@import "home/booking-form.scss";
+
+// about assets
+@import "about/about.scss";
+
+//tours assets
+@import "tours/header.scss";
+@import "tours/row.scss";
+
+//packages assets
+@import "packages/packages.scss";
+
+//special offers assets
+@import "special-offers/special-offers.scss";
+
+//blog assets
+@import "blog/blog.scss";
+
+//contact assets
+@import "contact/contact.scss";
+
+// footer assets
+@import "footer/footer.scss";

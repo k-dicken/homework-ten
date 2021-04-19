@@ -1,0 +1,107 @@
+.tour-row {
+    @include selfCenter(818px, 50px auto 0 auto);
+
+    // @include contentCenter(flex, center, space-between);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    padding-bottom: 100px;
+
+    .tours {
+        height: 304px;
+        width: 236px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        color: $site-white;
+
+
+
+        .title {
+            font-family: Proximal;
+            font-size: $title;
+
+            text-align: center;
+        }
+
+        .subtitle {
+            font-family: Proximal;
+            font-size: $subtitle;
+
+            margin: -25px 0 50px 0;
+        }
+
+        .button {
+            width: 130px;
+            height: 40px;
+
+            @include contentCenter;
+
+            @include siteButton;
+
+            font-family: Gill;
+            font-size: $small-desc;
+            text-decoration: none;
+            color: $site-white;
+
+        }
+
+    }
+
+    .israel {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-01.jpg);
+    }
+
+    .usa {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-02.jpg);
+    }
+
+    .australia {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-03.jpg);
+    }
+
+    
+    .new-zealand {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-04.jpg);
+    }
+
+    .france {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-05.jpg);
+    }
+
+    .egypt {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-06.jpg);
+    }
+
+
+    .japan {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-07.jpg);
+    }
+
+    .canada {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-08.jpg);
+    }  
+
+    .uae {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-09.jpg);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tour-row {
+        flex-direction: column;
+        padding: 0 50px 100px 50px;
+    }
+}

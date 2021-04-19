@@ -1,0 +1,87 @@
+.promo-tours {
+    max-width: 1280px;
+    // min-width: 1000px;
+    min-height: 304px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-left: 160px;
+    padding-right: 160px;
+
+    // background-color: blue;
+    
+
+    .promo {
+        height: 304px;
+        width: 236px;
+        margin-top: -50px;
+        margin-bottom: 75px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        color: $site-white;
+
+
+        .title {
+            font-family: Proximal;
+            font-size: $title;
+        }
+
+        .subtitle {
+            font-family: Proximal;
+            font-size: $subtitle;
+
+            margin: -25px 0 50px 0;
+        }
+
+        .button {
+            width: 130px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include siteButton;
+
+            font-family: Gill;
+            font-size: $small-desc;
+            text-decoration: none;
+            color: $site-white;
+
+        }
+
+    }
+
+
+    .israel {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-01.jpg);
+    }
+
+    .usa {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-02.jpg);
+    }
+
+    .australia {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-03.jpg);
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .promo-tours {
+        width: 236px;
+        display: block;
+        justify-content: center;
+        padding: 0;
+    }
+}

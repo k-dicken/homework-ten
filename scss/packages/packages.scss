@@ -1,0 +1,148 @@
+.packages {
+    @include selfCenter (980px);
+
+    padding-top: 50px;
+    
+    .header {
+        height: 420px;
+        margin-bottom: 40px;
+
+        @include backgroundStyle;
+
+        color: $site-white;
+
+        position: relative;
+
+        .title {
+            font-family: Proximal;
+            font-size: 80px;
+
+            left: 20px;
+            top: 5px;
+
+            position: absolute;
+        }
+
+        .subtitle {
+            font-family: Proximal;
+            font-size: 30px;
+            text-align: right;
+
+            position: absolute;
+
+            margin-right: 10px;
+
+            right: 20px;
+            bottom: 0;
+        }
+
+    }
+
+    .israel {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-01.jpg);
+    }
+
+    .usa {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-02.jpg);
+    }
+
+    .aus {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-03.jpg);
+    }
+
+    .nz {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-04.jpg);
+    }
+
+    .france {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-05.jpg);
+    }
+
+    .egypt {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-06.jpg);
+    }
+
+    .japan {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-07.jpg);
+    }
+
+    .canada {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-08.jpg);
+    }
+
+    .uae {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-09.jpg);
+    }
+
+
+    .images {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 30px;
+
+        flex: wrap;
+
+        img {
+            width: 298px;
+            height: 347px;
+
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+
+    .text-section {
+
+        .title {
+            width: 140px;
+            margin-top: 70px;
+
+            font-family: Proximal;
+            font-size: 60px;
+
+            border-bottom: black solid 1px;
+        }
+
+        .desc {
+            margin-top: 40px;
+
+            font-family: Gill;
+            font-size: 16px;
+        }
+    }
+
+    .button {
+        @include siteButton;
+
+        width: 133px;
+        height: 40px;
+
+        margin: 80px auto 100px auto;
+
+        display: flex;
+        justify-content: center;
+
+        font-family: Gill;
+        color: $site-white;
+        font-size: 16px;
+
+        text-decoration: none;
+    }
+
+}
+
+@media only screen and (max-width: 1060px) {
+    .packages {
+        width: 90%;
+
+        .images {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
